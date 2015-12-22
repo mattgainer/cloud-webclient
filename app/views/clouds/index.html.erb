@@ -1,0 +1,6 @@
+<h1>All Clouds</h1>
+<h2><%= link_to "New Cloud", "/clouds/new" %></2>
+<% @clouds.each do |cloud| %>
+  <%= render "cloud", {cloud: cloud} %>
+  <br>
+<% end %>

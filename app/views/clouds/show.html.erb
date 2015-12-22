@@ -1,0 +1,5 @@
+
+<%= render "cloud", {cloud: @cloud} %>
+
+<%= link_to "Edit #{@cloud.name}", "/clouds/#{@cloud.id}/edit" %>
+<%= link_to "Delete #{@cloud.name}", "/clouds/#{@cloud.id}", method: :delete %>

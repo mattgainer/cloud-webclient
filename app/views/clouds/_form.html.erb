@@ -1,0 +1,27 @@
+<div>
+  <%= label_tag "name" %>
+  <%= text_field_tag "name", @cloud.name %>
+</div>
+<div>
+  <%= label_tag :min_altitude %>
+  <%= text_field_tag :min_altitude, @cloud.min_altitude %>
+</div>
+<div>
+  <%= label_tag :max_altitude %>
+  <%= text_field_tag :max_altitude, @cloud.max_altitude %>
+</div>
+<div>
+  <%= label_tag :units %>
+  <%= text_field_tag :units, @cloud.units %>
+</div>
+<div>
+  <%= label_tag :composition %>
+  <%= text_field_tag :composition, @cloud.composition %>
+</div>
+<div>
+  <%= label_tag :precipitation %>
+  <%= text_field_tag :precipitation, @cloud.precipitation %>
+</div>
+<div>
+  <%= submit_tag "Submit" %>
+</div>

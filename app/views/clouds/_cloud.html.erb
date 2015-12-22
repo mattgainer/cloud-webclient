@@ -1,0 +1,15 @@
+<h3><%= link_to "#{cloud.name}", "/clouds/#{cloud.id}" %></h3>
+<table>
+  <tr>
+    <th>Minimum Altitude</th>
+    <th>Maximum Altitude</th>
+    <th>Composition</th>
+    <th>Precipitation</th>
+  </tr>
+  <tr>
+    <td><%= "#{cloud.min_altitude} #{cloud.units}" %></td>
+    <td><%= "#{cloud.max_altitude} #{cloud.units}" %></td>
+    <td><%= cloud.composition %></td>
+    <td><%= cloud.precipitation %></td>
+  </tr>
+</table>
